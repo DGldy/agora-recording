@@ -59,7 +59,7 @@ app.get('/api/v1/delete', async (req, res) => {
     let { channel, video } = body;
 
     try {
-        await fs.unlinkSync(`${__dirname}/output/${channel}/${video}`);
+        await fs.unlinkSync(`${__dirname}/output/${channel}/`);
         res.sendStatus(200);
     } catch (e) {
         console.error(`Error deleting video ${e}`)
