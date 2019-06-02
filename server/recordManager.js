@@ -2,6 +2,7 @@ const AgoraRecordingSDK = require("../record/AgoraRecordSdk");
 const path = require("path");
 const fs = require("fs");
 const uuidv4 = require('uuid/v4');
+const { generateVideo, moveVideo} = require('./helpers/convert')
 
 class RecordManager{
     constructor() {
@@ -76,16 +77,18 @@ class RecordManager{
             //rearrange layout when user leaves
 
             let recorder = this.find(sid);
-
+			
+			
             if(!recorder) {
-                console.error("no reocrder found");
+                console.error("no recorder found");
                 return;
             }
-            let {layout} = recorder;
+			this.rajko(sid);
+            /*let {layout} = recorder;
             layout.regions = layout.regions.filter((region) => {
                 return region.uid !== uid
             })
-            sdk.setMixLayout(layout);
+            sdk.setMixLayout(layout);*/
         });
         sdk.on("userjoin", (uid) => {
             //rearrange layout when new user joins
@@ -141,7 +144,28 @@ class RecordManager{
             throw new Error('recorder not exists');
         }
     }
-
+	
+	rajko(sid) {
+		let recorder = this.recorders[sid];
+		if(recorder) {
+			let {appid, channel} = recorder;
+			console.log(`stop recorder ${appid} ${channel} ${sid}`)
+			this.onCleanup(sid);
+			return new Promise((resolve, reject) => {
+				try {
+					generateVideo(channel);
+					moveVideo(channel);
+					resolve();
+				} catch (e) {
+					console.error(e);
+					reject();
+				}
+			} 
+		);
+		}
+		else throw new Error('recorder not exists');
+    }
+	
     onCleanup(sid) {
         let recorder = this.recorders[sid];
         if(recorder) {

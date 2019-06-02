@@ -1,0 +1,327 @@
+{ appid: 'f80c593662e643b9bb523141d27a086c', channel: '1936' }
+setting mix layout...
+joinChannel...
+appliteDir /home/ubuntu/agora-recording/record/src/sdk/bin/
+pRecording->m_agorasdk->createChannel return result:1
+join channel Id: 1936, with uid: 2035484886
+recorder started f80c593662e643b9bb523141d27a086c 1936 3c5f49f1-cc00-4345-a215-73794226fd7e
+User 2852673485 joined, RecordingDir:/home/ubuntu/agora-recording/server/output/1936/
+user join 2852673485
+setting mix layout...
+color: #00ff00
+User 1954243453 joined, RecordingDir:/home/ubuntu/agora-recording/server/output/1936/
+color: #00ff00
+user join 1954243453
+setting mix layout...
+color: #00ff00
+User 1954243453 offline, reason: 0
+color: #00ff00
+user leave 1954243453
+stop recorder f80c593662e643b9bb523141d27a086c 1936 3c5f49f1-cc00-4345-a215-73794226fd7e
+releasing 3c5f49f1-cc00-4345-a215-73794226fd7e
+leaveChannel...
+User 2852673485 offline, reason: 0
+color: #00ff00
+ffmpeg version 3.3-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 5.4.1 (Debian 5.4.1-8) 20170304
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc-5 --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gray --enable-libass --enable-libfreetype --enable-libfribidi --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Input #0, lavfi, from 'anullsrc=channel_layout=mono:sample_rate=48000':
+  Duration: N/A, start: 0.000000, bitrate: 384 kb/s
+    Stream #0:0: Audio: pcm_u8, 48000 Hz, mono, u8, 384 kb/s
+[aac @ 0x3d1fe60] Estimating duration from bitrate, this may be inaccurate
+Input #1, aac, from '0_20190601215926650.aac':
+  Duration: 00:03:15.14, bitrate: 45 kb/s
+    Stream #1:0: Audio: aac (LC), 48000 Hz, mono, fltp, 45 kb/s
+Stream mapping:
+  Stream #0:0 (pcm_u8) -> concat:in0:a0
+  Stream #1:0 (aac) -> concat:in1:a0
+  concat -> Stream #0:0 (aac)
+Press [q] to stop, [?] for help
+Output #0, ipod, to '0_20190601215926649_tmp.m4a':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 69 kb/s (default)
+    Metadata:
+      encoder         : Lavc57.89.100 aac
+size=     288kB time=00:00:33.36 bitrate=  70.6kbits/s speed=66.6x    size=     575kB time=00:01:06.56 bitrate=  70.7kbits/s speed=66.5x    size=     833kB time=00:01:36.19 bitrate=  70.9kbits/s speed=64.1x    size=    1085kB time=00:02:05.14 bitrate=  71.0kbits/s speed=62.5x    size=    1283kB time=00:02:27.73 bitrate=  71.2kbits/s speed=  59x    size=    1518kB time=00:02:54.46 bitrate=  71.3kbits/s speed=58.1x    size=    1639kB time=00:03:04.42 bitrate=  72.8kbits/s speed=57.4x    
+video:0kB audio:1605kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.151150%
+[aac @ 0x3d32180] Qavg: 228.032
+ffmpeg version 3.3-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 5.4.1 (Debian 5.4.1-8) 20170304
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc-5 --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gray --enable-libass --enable-libfreetype --enable-libfribidi --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '0_20190601215926649_tmp.m4a':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: isomiso2
+    encoder         : Lavf57.71.100
+  Duration: 00:03:04.44, start: 0.000000, bitrate: 72 kb/s
+    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 71 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Input #1, lavfi, from 'color=black:s=640x480:r=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+    Stream #1:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 640x480 [SAR 1:1 DAR 4:3], 15 tbr, 15 tbn, 15 tbc
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from '0_20190601215926649.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isom
+    creation_time   : 2019-06-01T21:59:26.000000Z
+  Duration: 00:03:04.42, start: 0.000000, bitrate: 466 kb/s
+    Stream #2:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x480, 466 kb/s, 15.16 fps, 15.15 tbr, 1k tbn, 30 tbc (default)
+    Metadata:
+      creation_time   : 2019-06-01T21:59:26.000000Z
+      encoder         : JVT/AVC Coding
+Stream mapping:
+  Stream #1:0 (rawvideo) -> overlay:main
+  Stream #2:0 (h264) -> scale
+  Stream #0:0 -> #0:0 (copy)
+  overlay -> Stream #0:1 (libx264)
+Press [q] to stop, [?] for help
+[libx264 @ 0x5571280] using SAR=1/1
+[libx264 @ 0x5571280] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x5571280] profile High, level 2.2
+[libx264 @ 0x5571280] 264 - core 148 r333 90a61ec - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=15 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'static.mp4':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: isomiso2
+    encoder         : Lavf57.71.100
+    Stream #0:0(und): Audio: aac (LC) ([64][0][0][0] / 0x0040), 48000 Hz, mono, fltp, 71 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+    Stream #0:1: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 640x480 [SAR 1:1 DAR 4:3], q=-1--1, 15 fps, 15360 tbn, 15 tbc (default)
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+frame=   63 fps=0.0 q=27.0 size=     122kB time=00:00:03.26 bitrate= 305.6kbits/s speed=6.46x    frame=  127 fps=125 q=27.0 size=     261kB time=00:00:07.53 bitrate= 284.2kbits/s speed=7.42x    frame=  193 fps=127 q=27.0 size=     392kB time=00:00:11.93 bitrate= 269.2kbits/s speed=7.84x    frame=  253 fps=125 q=27.0 size=     532kB time=00:00:15.93 bitrate= 273.7kbits/s speed=7.87x    frame=  318 fps=126 q=27.0 size=     664kB time=00:00:20.26 bitrate= 268.6kbits/s speed=8.02x    frame=  383 fps=126 q=27.0 size=     803kB time=00:00:24.60 bitrate= 267.4kbits/s speed=8.11x    frame=  448 fps=127 q=27.0 size=     941kB time=00:00:28.93 bitrate= 266.5kbits/s speed=8.19x    frame=  516 fps=128 q=27.0 size=    1077kB time=00:00:33.46 bitrate= 263.6kbits/s speed=8.28x    frame=  591 fps=130 q=27.0 size=    1199kB time=00:00:38.46 bitrate= 255.3kbits/s speed=8.46x    frame=  655 fps=130 q=27.0 size=    1327kB time=00:00:42.73 bitrate= 254.5kbits/s speed=8.46x    frame=  719 fps=129 q=27.0 size=    1467kB time=00:00:47.00 bitrate= 255.8kbits/s speed=8.45x    frame=  779 fps=128 q=27.0 size=    1611kB time=00:00:51.00 bitrate= 258.7kbits/s speed=8.41x    frame=  836 fps=127 q=27.0 size=    1755kB time=00:00:54.80 bitrate= 262.3kbits/s speed=8.35x    frame=  890 fps=126 q=27.0 size=    1896kB time=00:00:58.40 bitrate= 265.9kbits/s speed=8.27x    frame=  951 fps=126 q=27.0 size=    2037kB time=00:01:02.46 bitrate= 267.2kbits/s speed=8.25x    frame= 1011 fps=125 q=27.0 size=    2170kB time=00:01:06.46 bitrate= 267.4kbits/s speed=8.23x    frame= 1072 fps=125 q=27.0 size=    2315kB time=00:01:10.53 bitrate= 268.9kbits/s speed=8.22x    frame= 1138 fps=125 q=27.0 size=    2455kB time=00:01:14.93 bitrate= 268.4kbits/s speed=8.25x    frame= 1204 fps=126 q=27.0 size=    2580kB time=00:01:19.33 bitrate= 266.4kbits/s speed=8.28x    frame= 1272 fps=126 q=27.0 size=    2706kB time=00:01:23.86 bitrate= 264.3kbits/s speed=8.32x    frame= 1336 fps=126 q=27.0 size=    2838kB time=00:01:28.13 bitrate= 263.8kbits/s speed=8.33x    frame= 1400 fps=126 q=27.0 size=    2971kB time=00:01:32.40 bitrate= 263.4kbits/s speed=8.33x    frame= 1463 fps=126 q=27.0 size=    3105kB time=00:01:36.60 bitrate= 263.3kbits/s speed=8.34x    frame= 1531 fps=127 q=27.0 size=    3237kB time=00:01:41.13 bitrate= 262.2kbits/s speed=8.36x    frame= 1600 fps=127 q=27.0 size=    3362kB time=00:01:45.73 bitrate= 260.5kbits/s speed=8.39x    frame= 1668 fps=127 q=27.0 size=    3486kB time=00:01:50.26 bitrate= 259.0kbits/s speed=8.41x    frame= 1736 fps=128 q=27.0 size=    3623kB time=00:01:54.80 bitrate= 258.5kbits/s speed=8.43x    frame= 1797 fps=127 q=27.0 size=    3757kB time=00:01:58.86 bitrate= 258.9kbits/s speed=8.42x    frame= 1855 fps=127 q=27.0 size=    3905kB time=00:02:02.73 bitrate= 260.6kbits/s speed=8.39x    frame= 1920 fps=127 q=27.0 size=    4043kB time=00:02:07.06 bitrate= 260.7kbits/s speed= 8.4x    frame= 1988 fps=127 q=27.0 size=    4170kB time=00:02:11.60 bitrate= 259.6kbits/s speed=8.42x    frame= 2063 fps=128 q=27.0 size=    4294kB time=00:02:16.60 bitrate= 257.5kbits/s speed=8.47x    frame= 2141 fps=129 q=27.0 size=    4415kB time=00:02:21.80 bitrate= 255.1kbits/s speed=8.52x    frame= 2218 fps=129 q=27.0 size=    4531kB time=00:02:26.93 bitrate= 252.6kbits/s speed=8.57x    frame= 2289 fps=130 q=27.0 size=    4659kB time=00:02:31.66 bitrate= 251.7kbits/s speed= 8.6x    frame= 2366 fps=130 q=27.0 size=    4780kB time=00:02:36.80 bitrate= 249.8kbits/s speed=8.64x    frame= 2444 fps=131 q=27.0 size=    4892kB time=00:02:42.00 bitrate= 247.4kbits/s speed=8.69x    frame= 2506 fps=131 q=27.0 size=    5036kB time=00:02:46.13 bitrate= 248.3kbits/s speed=8.67x    frame= 2569 fps=131 q=27.0 size=    5176kB time=00:02:50.33 bitrate= 248.9kbits/s speed=8.66x    frame= 2630 fps=130 q=27.0 size=    5313kB time=00:02:54.40 bitrate= 249.6kbits/s speed=8.65x    frame= 2689 fps=130 q=27.0 size=    5458kB time=00:02:58.33 bitrate= 250.7kbits/s speed=8.63x    frame= 2746 fps=130 q=27.0 size=    5607kB time=00:03:02.13 bitrate= 252.2kbits/s speed= 8.6x    frame= 2766 fps=129 q=27.0 Lsize=    5782kB time=00:03:04.38 bitrate= 256.9kbits/s speed=8.62x    
+video:4082kB audio:1605kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 1.689755%
+[libx264 @ 0x5571280] frame I:12    Avg QP:12.14  size:  7032
+[libx264 @ 0x5571280] frame P:862   Avg QP:17.85  size:  2898
+[libx264 @ 0x5571280] frame B:1892  Avg QP:23.29  size:   844
+[libx264 @ 0x5571280] consecutive B-frames:  5.9%  5.1% 10.4% 78.5%
+[libx264 @ 0x5571280] mb I  I16..4: 55.8% 28.1% 16.1%
+[libx264 @ 0x5571280] mb P  I16..4:  3.2%  4.9%  0.4%  P16..4: 18.2% 11.8%  4.9%  0.0%  0.0%    skip:56.6%
+[libx264 @ 0x5571280] mb B  I16..4:  0.5%  0.7%  0.0%  B16..8: 11.1%  3.6%  0.3%  direct: 4.9%  skip:78.9%  L0:44.1% L1:44.8% BI:11.1%
+[libx264 @ 0x5571280] 8x8 transform intra:54.0% inter:45.6%
+[libx264 @ 0x5571280] coded y,uvDC,uvAC intra: 40.2% 55.1% 8.2% inter: 3.9% 12.6% 0.1%
+[libx264 @ 0x5571280] i16 v,h,dc,p: 65% 19%  8%  8%
+[libx264 @ 0x5571280] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 25% 18%  2%  3%  3%  3%  4%  4%
+[libx264 @ 0x5571280] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 19% 13%  4%  5%  6%  4%  6%  4%
+[libx264 @ 0x5571280] i8c dc,h,v,p: 53% 16% 25%  7%
+[libx264 @ 0x5571280] Weighted P-Frames: Y:1.7% UV:0.2%
+[libx264 @ 0x5571280] kb/s:181.30
+Offset_time : 0
+UID:0_20190601215926649
+DEBUG:False:['0.000 0_20190601215926649.mp4 create \n', '0.000 0_20190601215926650.aac create \n', '0.001 0_20190601215926649.mp4 info width=640 height=480 rotation=0\n', '184.422 0_20190601215926649.mp4 close \n', '184.422 0_20190601215926650.aac close \n']
+Audio Clip: : start_time=0.000, end_time=0.000
+Audio Clip 0: 0_20190601215926650.aac: start_time=0.000, end_time=184.422
+Video Clip 0: 0_20190601215926649.mp4: start_time=0.001, end_time=184.422, width=640, height=480
+Generate Audio File
+==============================audio ffmpeg=====================================
+ffmpeg -f lavfi -t 0.001 -i anullsrc=channel_layout=mono:sample_rate=48000 -i 0_20190601215926650.aac -filter_complex "concat=n=2:v=0:a=1[audio]"  -map "[audio]" -to 184.422000 -y 0_20190601215926649_tmp.m4a 2>&1 | tee -a convert.log
+ffmpeg -f lavfi -t 0.001 -i anullsrc=channel_layout=mono:sample_rate=48000 -i 0_20190601215926650.aac -filter_complex "concat=n=2:v=0:a=1[audio]"  -map "[audio]" -to 184.422000 -y 0_20190601215926649_tmp.m4a 2>&1 | tee -a convert.log
+Generate MP4 file:
+Output resolution: (640, 480)
+=================================video ffmpeg ========================
+ffmpeg -i 0_20190601215926649_tmp.m4a -f lavfi -i "color=black:s=640x480:r=15" -i 0_20190601215926649.mp4 -filter_complex "[2]scale=640x480,setpts=PTS-STARTPTS+0.001/TB[scale2];[1][scale2]overlay=eof_action=pass[video]"  -map 0:a:0 -map "[video]" -c:a copy -c:v libx264 -r 15 -preset veryfast -shortest -to 184.422000 -y static.mp4 2>&1 | tee -a convert.log
+ffmpeg -i 0_20190601215926649_tmp.m4a -f lavfi -i "color=black:s=640x480:r=15" -i 0_20190601215926649.mp4 -filter_complex "[2]scale=640x480,setpts=PTS-STARTPTS+0.001/TB[scale2];[1][scale2]overlay=eof_action=pass[video]"  -map 0:a:0 -map "[video]" -c:a copy -c:v libx264 -r 15 -preset veryfast -shortest -to 184.422000 -y static.mp4 2>&1 | tee -a convert.log
+
+
+
+user leave 2852673485
+{ appid: 'f80c593662e643b9bb523141d27a086c', channel: '1937' }
+setting mix layout...
+joinChannel...
+appliteDir /home/ubuntu/agora-recording/record/src/sdk/bin/
+pRecording->m_agorasdk->createChannel return result:1
+join channel Id: 1937, with uid: 3807996046
+recorder started f80c593662e643b9bb523141d27a086c 1937 bdfd000d-464f-4103-a1f9-5707cb4ae830
+User 3491627274 joined, RecordingDir:/home/ubuntu/agora-recording/server/output/1937/
+user join 3491627274
+setting mix layout...
+color: #00ff00
+User 831848172 joined, RecordingDir:/home/ubuntu/agora-recording/server/output/1937/
+color: #00ff00
+user join 831848172
+setting mix layout...
+color: #00ff00
+User 831848172 offline, reason: 0
+color: #00ff00
+user leave 831848172
+stop recorder f80c593662e643b9bb523141d27a086c 1937 bdfd000d-464f-4103-a1f9-5707cb4ae830
+releasing bdfd000d-464f-4103-a1f9-5707cb4ae830
+leaveChannel...
+User 3491627274 offline, reason: 0
+color: #00ff00
+ffmpeg version 3.3-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 5.4.1 (Debian 5.4.1-8) 20170304
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc-5 --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gray --enable-libass --enable-libfreetype --enable-libfribidi --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Input #0, lavfi, from 'anullsrc=channel_layout=mono:sample_rate=48000':
+  Duration: N/A, start: 0.000000, bitrate: 384 kb/s
+    Stream #0:0: Audio: pcm_u8, 48000 Hz, mono, u8, 384 kb/s
+[aac @ 0x45f4e60] Estimating duration from bitrate, this may be inaccurate
+Input #1, aac, from '0_20190601220851187.aac':
+  Duration: 00:00:20.51, bitrate: 45 kb/s
+    Stream #1:0: Audio: aac (LC), 48000 Hz, mono, fltp, 45 kb/s
+Stream mapping:
+  Stream #0:0 (pcm_u8) -> concat:in0:a0
+  Stream #1:0 (aac) -> concat:in1:a0
+  concat -> Stream #0:0 (aac)
+Press [q] to stop, [?] for help
+Output #0, ipod, to '0_20190601220851185_tmp.m4a':
+  Metadata:
+    encoder         : Lavf57.71.100
+    Stream #0:0: Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 69 kb/s (default)
+    Metadata:
+      encoder         : Lavc57.89.100 aac
+size=     170kB time=00:00:19.17 bitrate=  72.6kbits/s speed=49.8x    
+video:0kB audio:166kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.562305%
+[aac @ 0x4606d60] Qavg: 214.709
+ffmpeg version 3.3-static http://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2017 the FFmpeg developers
+  built with gcc 5.4.1 (Debian 5.4.1-8) 20170304
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc-5 --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gray --enable-libass --enable-libfreetype --enable-libfribidi --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libzimg
+  libavutil      55. 58.100 / 55. 58.100
+  libavcodec     57. 89.100 / 57. 89.100
+  libavformat    57. 71.100 / 57. 71.100
+  libavdevice    57.  6.100 / 57.  6.100
+  libavfilter     6. 82.100 /  6. 82.100
+  libswscale      4.  6.100 /  4.  6.100
+  libswresample   2.  7.100 /  2.  7.100
+  libpostproc    54.  5.100 / 54.  5.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '0_20190601220851185_tmp.m4a':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: isomiso2
+    encoder         : Lavf57.71.100
+  Duration: 00:00:19.20, start: 0.000000, bitrate: 72 kb/s
+    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 70 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Input #1, lavfi, from 'color=black:s=640x480:r=15':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+    Stream #1:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 640x480 [SAR 1:1 DAR 4:3], 15 tbr, 15 tbn, 15 tbc
+Input #2, mov,mp4,m4a,3gp,3g2,mj2, from '0_20190601220851185.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: mp42isom
+    creation_time   : 2019-06-01T22:08:51.000000Z
+  Duration: 00:00:19.18, start: 0.000000, bitrate: 398 kb/s
+    Stream #2:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x480, 397 kb/s, 15.18 fps, 15.15 tbr, 1k tbn, 30 tbc (default)
+    Metadata:
+      creation_time   : 2019-06-01T22:08:51.000000Z
+      encoder         : JVT/AVC Coding
+Stream mapping:
+  Stream #1:0 (rawvideo) -> overlay:main
+  Stream #2:0 (h264) -> scale
+  Stream #0:0 -> #0:0 (copy)
+  overlay -> Stream #0:1 (libx264)
+Press [q] to stop, [?] for help
+[libx264 @ 0x4a54d80] using SAR=1/1
+[libx264 @ 0x4a54d80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 AVX2 LZCNT BMI2
+[libx264 @ 0x4a54d80] profile High, level 2.2
+[libx264 @ 0x4a54d80] 264 - core 148 r333 90a61ec - H.264/MPEG-4 AVC codec - Copyleft 2003-2017 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=2 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=15 scenecut=40 intra_refresh=0 rc_lookahead=10 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'static.mp4':
+  Metadata:
+    major_brand     : M4A 
+    minor_version   : 512
+    compatible_brands: isomiso2
+    encoder         : Lavf57.71.100
+    Stream #0:0(und): Audio: aac (LC) ([64][0][0][0] / 0x0040), 48000 Hz, mono, fltp, 70 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+    Stream #0:1: Video: h264 (libx264) ([33][0][0][0] / 0x0021), yuv420p, 640x480 [SAR 1:1 DAR 4:3], q=-1--1, 15 fps, 15360 tbn, 15 tbc (default)
+    Metadata:
+      encoder         : Lavc57.89.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+frame=   70 fps=0.0 q=27.0 size=     119kB time=00:00:03.73 bitrate= 261.3kbits/s speed=7.43x    frame=  142 fps=141 q=27.0 size=     258kB time=00:00:08.53 bitrate= 247.5kbits/s speed=8.49x    frame=  218 fps=145 q=27.0 size=     377kB time=00:00:13.60 bitrate= 227.3kbits/s speed=9.03x    frame=  286 fps=143 q=27.0 size=     503kB time=00:00:18.13 bitrate= 227.2kbits/s speed=9.04x    frame=  288 fps=140 q=27.0 Lsize=     526kB time=00:00:19.15 bitrate= 225.0kbits/s speed= 9.3x    
+video:349kB audio:166kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.126925%
+[libx264 @ 0x4a54d80] frame I:2     Avg QP:13.55  size:  5714
+[libx264 @ 0x4a54d80] frame P:91    Avg QP:17.39  size:  2474
+[libx264 @ 0x4a54d80] frame B:195   Avg QP:23.07  size:   703
+[libx264 @ 0x4a54d80] consecutive B-frames:  6.6%  6.2%  9.4% 77.8%
+[libx264 @ 0x4a54d80] mb I  I16..4: 57.4% 32.8%  9.8%
+[libx264 @ 0x4a54d80] mb P  I16..4:  1.9%  3.7%  0.3%  P16..4: 15.6% 10.1%  4.1%  0.0%  0.0%    skip:64.3%
+[libx264 @ 0x4a54d80] mb B  I16..4:  0.3%  0.5%  0.0%  B16..8:  8.6%  3.0%  0.2%  direct: 4.1%  skip:83.3%  L0:46.1% L1:43.0% BI:10.9%
+[libx264 @ 0x4a54d80] 8x8 transform intra:55.4% inter:44.8%
+[libx264 @ 0x4a54d80] coded y,uvDC,uvAC intra: 43.6% 53.2% 8.0% inter: 3.3% 10.3% 0.1%
+[libx264 @ 0x4a54d80] i16 v,h,dc,p: 64% 20%  6% 10%
+[libx264 @ 0x4a54d80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 39% 24% 14%  3%  4%  4%  4%  5%  4%
+[libx264 @ 0x4a54d80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 21% 12%  6%  6%  7%  5%  5%  4%
+[libx264 @ 0x4a54d80] i8c dc,h,v,p: 54% 18% 19%  9%
+[libx264 @ 0x4a54d80] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x4a54d80] kb/s:155.65
+Offset_time : 0
+UID:0_20190601220851185
+DEBUG:False:['0.000 0_20190601220851185.mp4 create \n', '0.000 0_20190601220851185.mp4 info width=640 height=480 rotation=0\n', '0.002 0_20190601220851187.aac create \n', '19.175 0_20190601220851185.mp4 close \n', '19.176 0_20190601220851187.aac close \n']
+Audio Clip: : start_time=0.000, end_time=0.000
+Audio Clip 0: 0_20190601220851187.aac: start_time=0.002, end_time=19.176
+Video Clip 0: 0_20190601220851185.mp4: start_time=0.000, end_time=19.175, width=640, height=480
+Generate Audio File
+==============================audio ffmpeg=====================================
+ffmpeg -f lavfi -t 0.002 -i anullsrc=channel_layout=mono:sample_rate=48000 -i 0_20190601220851187.aac -filter_complex "concat=n=2:v=0:a=1[audio]"  -map "[audio]" -to 19.176000 -y 0_20190601220851185_tmp.m4a 2>&1 | tee -a convert.log
+ffmpeg -f lavfi -t 0.002 -i anullsrc=channel_layout=mono:sample_rate=48000 -i 0_20190601220851187.aac -filter_complex "concat=n=2:v=0:a=1[audio]"  -map "[audio]" -to 19.176000 -y 0_20190601220851185_tmp.m4a 2>&1 | tee -a convert.log
+Generate MP4 file:
+Output resolution: (640, 480)
+=================================video ffmpeg ========================
+ffmpeg -i 0_20190601220851185_tmp.m4a -f lavfi -i "color=black:s=640x480:r=15" -i 0_20190601220851185.mp4 -filter_complex "[2]scale=640x480,setpts=PTS-STARTPTS+0.000/TB[scale2];[1][scale2]overlay=eof_action=pass[video]"  -map 0:a:0 -map "[video]" -c:a copy -c:v libx264 -r 15 -preset veryfast -shortest -to 19.176000 -y static.mp4 2>&1 | tee -a convert.log
+ffmpeg -i 0_20190601220851185_tmp.m4a -f lavfi -i "color=black:s=640x480:r=15" -i 0_20190601220851185.mp4 -filter_complex "[2]scale=640x480,setpts=PTS-STARTPTS+0.000/TB[scale2];[1][scale2]overlay=eof_action=pass[video]"  -map 0:a:0 -map "[video]" -c:a copy -c:v libx264 -r 15 -preset veryfast -shortest -to 19.176000 -y static.mp4 2>&1 | tee -a convert.log
+
+
+
+user leave 3491627274
+{ appid: 'f80c593662e643b9bb523141d27a086c', channel: '1938' }
+setting mix layout...
+joinChannel...
+appliteDir /home/ubuntu/agora-recording/record/src/sdk/bin/
+pRecording->m_agorasdk->createChannel return result:0
+{ appid: 'f80c593662e643b9bb523141d27a086c', channel: '1939' }
+setting mix layout...
+joinChannel...
+appliteDir /home/ubuntu/agora-recording/record/src/sdk/bin/
+pRecording->m_agorasdk->createChannel return result:0
+{ appid: 'f80c593662e643b9bb523141d27a086c', channel: '1941' }
+setting mix layout...
+joinChannel...
+appliteDir /home/ubuntu/agora-recording/record/src/sdk/bin/
+pRecording->m_agorasdk->createChannel return result:0
+{ appid: 'f80c593662e643b9bb523141d27a086c', channel: '1942' }
+setting mix layout...
+joinChannel...
+appliteDir /home/ubuntu/agora-recording/record/src/sdk/bin/
+pRecording->m_agorasdk->createChannel return result:0
+{ appid: 'f80c593662e643b9bb523141d27a086c', channel: '1943' }
+setting mix layout...
+joinChannel...
+appliteDir /home/ubuntu/agora-recording/record/src/sdk/bin/
+pRecording->m_agorasdk->createChannel return result:0

@@ -6,6 +6,7 @@ const RecordManager = require('./recordManager')
 const bodyParser = require('body-parser')
 const { generateVideo, moveVideo} = require('./helpers/convert')
 
+
 app.use(bodyParser.json());
 app.use('/static', express.static('output'));
 
